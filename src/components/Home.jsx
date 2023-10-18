@@ -40,9 +40,7 @@ const Home = () => {
             <div>
                 <img src={WebsitePic} alt="my profile" 
                 className=" rounded-3xl mx-auto w-2/3 md:w-full"
-                style={{
-                    display: 'none',
-                }}
+
                 />
 
             </div>
