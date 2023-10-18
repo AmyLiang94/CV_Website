@@ -17,13 +17,6 @@ const About = () => {
         In addition to my academic achievements, I've pursued various certifications from Skyscanner, Wells Fargo, Google, and Microsoft, reflecting my dedication to continuous learning and professional growth.
         </p>
 
-        <br />
-
-        <p className='text-xl md:mt-20 sm:mt-1 sm:hide-on-mobile'
-        >
-        Beyond my technical skills, I have diverse experiences. I've engaged with visitors as an Open Day Tour Guide at Newcastle University, where I showcased my adaptability and provided excellent customer service. I've also collaborated with international commercial teams at Coface, refining my teamwork and attention-to-detail skills. Furthermore, my background includes working as a social worker and case manager, emphasizing inclusive communication, negotiation, and event coordination.
-        </p>
-
 
       </div>
     </div>
