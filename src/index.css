@@ -28,12 +28,9 @@
   }
 }
 
-.hide-on-mobile {
-  display: none;
-}
 
 @media (max-width: 768px) {
-  .show-on-mobile {
-    display: block;
+  .hide-on-mobile {
+    display: none;
   }
 }
