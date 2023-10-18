@@ -19,7 +19,11 @@ const About = () => {
 
         <br />
 
-        <p className='text-xl md:mt-20 sm:mt-1'>
+        <p className='text-xl md:mt-20 sm:mt-1'
+        style={{
+          display: 'none',
+      }}
+        >
         Beyond my technical skills, I have diverse experiences. I've engaged with visitors as an Open Day Tour Guide at Newcastle University, where I showcased my adaptability and provided excellent customer service. I've also collaborated with international commercial teams at Coface, refining my teamwork and attention-to-detail skills. Furthermore, my background includes working as a social worker and case manager, emphasizing inclusive communication, negotiation, and event coordination.
         </p>
 
