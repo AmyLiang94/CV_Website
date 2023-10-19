@@ -1,8 +1,8 @@
 import React from 'react';
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg"
+import MoneyManagement from "../assets/portfolio/MoneyManagement.png"
 import installNode from "../assets/portfolio/installNode.jpg"
-import navbar from "../assets/portfolio/navbar.jpg"
-import reactParallax from "../assets/portfolio/reactParallax.jpg"
+import TouristSite from "../assets/portfolio/TouristSite.png"
+import Battleship from "../assets/portfolio/Battleship.png"
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg"
 import reactWeather from "../assets/portfolio/reactWeather.jpg"
 
@@ -12,15 +12,17 @@ const Portfolio = () => {
     const portfolio = [
         {
             id: 1,
-            src: arrayDestruct
+            src: MoneyManagement,
+            href: 'https://youtu.be/DyVhWUyiJUs',
         },
         {
             id: 2,
-            src: reactParallax
+            src: Battleship,
+            href: 'https://github.com/benblack90/Battleships',
         },
         {
             id: 3,
-            src: navbar
+            src: TouristSite
         },
         {
             id: 4,
@@ -48,16 +50,19 @@ const Portfolio = () => {
         </div>
         <div  className='grid grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
         {
-            portfolio.map(({id, src}) => (
+            portfolio.map(({id, src, href}) => (
 
                 <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
+                <a href={href} target='_blank' rel='noopener noreferrer'>    
                     <img 
                       src={src} 
                       alt=''
-                      className='rounded-md duration-200 hover:scale-105'/>
+                      className='rounded-md duration-200 hover:scale-105'
+                      />
                     <div className='flex items-center justify-center'>
                         <button className='w-1/2 justify-center py-3 m-4 duration-200 hover:scale-105'>More</button>
                     </div>
+                    </a>
                 </div>
 
             ))}
