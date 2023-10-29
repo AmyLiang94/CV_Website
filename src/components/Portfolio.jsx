@@ -3,8 +3,9 @@ import MoneyManagement from "../assets/portfolio/MoneyManagement.png"
 import installNode from "../assets/portfolio/installNode.jpg"
 import TouristSite from "../assets/portfolio/TouristSite.png"
 import Battleship from "../assets/portfolio/Battleship.png"
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg"
+import Quiz_application from "../assets/portfolio/Quiz_application.png"
 import reactWeather from "../assets/portfolio/reactWeather.jpg"
+
 
 
 const Portfolio = () => {
@@ -26,7 +27,8 @@ const Portfolio = () => {
         },
         {
             id: 4,
-            src: reactSmooth
+            src: Quiz_application,
+            href: 'https://github.com/AmyLiang94/Quiz-application'
         },
         {
             id: 5,
