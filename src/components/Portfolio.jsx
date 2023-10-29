@@ -13,22 +13,27 @@ const Portfolio = () => {
     const portfolio = [
         {
             id: 1,
-            src: MoneyManagement,
-            href: 'https://youtu.be/DyVhWUyiJUs',
+            
+            src: Quiz_application,
+            href: 'https://github.com/AmyLiang94/Quiz-application'
         },
         {
             id: 2,
-            src: Battleship,
-            href: 'https://github.com/benblack90/Battleships',
+            src: TouristSite,
+            href: 'https://github.com/AmyLiang94/Newcastle-Travel-Web-App'
+            
         },
         {
             id: 3,
-            src: TouristSite
+            src: Battleship,
+            href: 'https://github.com/benblack90/Battleships',
+            
         },
         {
             id: 4,
-            src: Quiz_application,
-            href: 'https://github.com/AmyLiang94/Quiz-application'
+            src: MoneyManagement,
+            href: 'https://youtu.be/DyVhWUyiJUs',
+            
         },
         {
             id: 5,
