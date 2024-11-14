@@ -20,7 +20,7 @@ const Home = () => {
                     I'm a Software Developer
                 </h2>
                 <p className='text-gray-500 py-4 max-w-md font-signature'>
-                Computer Science graduate aspiring to pursue a career in software development.
+                For me, coding is more than just writing lines of code; it's about using our skills to create meaningful solutions and drive positive change in the world!
                 </p>
                 <div>
                     <Link 
