@@ -41,7 +41,7 @@ const SocialLinks = () => {
                 Resume <BsFillPersonLinesFill size={30}/>
                 </>
             ),
-            href:'/resume.pdf',
+            href:'/Amy Liang CV.pdf',
             style: 'rounded-tr-md',
             download: true,
         },
