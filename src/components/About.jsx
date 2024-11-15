@@ -1,27 +1,63 @@
 import React from 'react'
 
 const About = () => {
+  const skills = [
+    {
+      title: 'Technical Skills',
+      description:[
+        'Proficiency: Currently working on web development projects for Northumbria University, collaborating with marketing teams to enhance user engagement, resulting in a 22% increase in traffic. Also led the management and enhancement of the CMS backend system.',
+        'API Integration: Developed and deployed several full-stack web applications, gaining hands-on experience with projects like a money management website and a weather forecast app, showcasing strong skills in web development and RESTful API integration.',
+        'Database: Achieved excellent grades (85.5/100) for effectively managing academic staff data',
+      ],
+      bgColor: 'bg-blue-500',
+      icon: <FaCode size={30} className="text-white" />,
+    },
+    {
+      title: 'Team Player',
+      description: [
+        'Project Leadership: Led a team in developing a museum management system, earning a top grade of 96/100. Facilitated effective communication and collaboration, ensuring successful project completion and team productivity.',
+        'Efficiency & Team Collaboration: Managed 160+ cases annually, collaborating with diverse stakeholders to deliver results effectively within multidisciplinary teams.',
+      ],
+      bgColor: 'bg-green-500',
+      icon: <FaUsers size={30} className="text-white" />,
+    },
+    {
+      title: 'Innovation',
+      description:[
+        'User Experience Community Associate: Improved user experience by analyzing feedback and implementing design enhancements across platforms, ensuring alignment with diverse community interests ',
+        'Computer Science University Ambassador, Campus Tour Guide, Student Guidance and Mentorship',
+      ],
+      bgColor: 'bg-yellow-500',
+      icon: <FaLightbulb size={30} className="text-white" />,
+    },
+    {
+      title: 'Passion for Learning',
+      description: [
+        'Certifications: Earned certifications in software development and Generative AI from Microsoft, Google, and LinkedIn, alongside completing the HackerRank Java Challenges, showcasing my commitment to expanding my technical expertise.',
+        'Certifications: Earned certifications in software development and Generative AI from Microsoft, Google, and LinkedIn, alongside completing the HackerRank Java Challenges, showcasing my commitment to expanding my technical expertise.',
+      ],
+      bgColor: 'bg-purple-500',
+      icon: <FaBookOpen size={30} className="text-white" />,
+    },
+  ];
   return (
     <div name="about" className='w-full justify-center h-screen bg-gradient-to-b from-gray-800 to-black text-white'>
       <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
             <p className='text-4xl font-bold inline border-b-4 border-gray-500 font-signature'>About</p>
         </div>
-        <p className='text-xl md:mt-20 sm:mt-1'>
-        I hold an MSc in Computer Science from Newcastle University. My expertise encompasses a variety of programming languages, from Java to SQL, HTML, CSS, JavaScript, and TypeScript. I'm good in using a range of essential technology tools and frameworks such as React, Vue.js, Spring Boot, Git, Firebase, and Node.js. My experience extends to working within both Agile and Waterfall development methodologies.
-        </p>
-
-        <br />
-
-        <p className='text-xl md:mt-20 sm:mt-1'>
-        In addition to my academic achievements, I've pursued various certifications from Skyscanner, Wells Fargo, Google, and Microsoft, reflecting my dedication to continuous learning and professional growth.
-        </p>
-
-        <p className='text-xl md:mt-20 sm:mt-1 hide-on-mobile'>
-        Beyond my technical skills, I have diverse experiences. I've engaged with visitors as an Open Day Tour Guide at Newcastle University, where I showcased my adaptability and provided excellent customer service. I've also collaborated with international commercial teams at Coface, refining my teamwork and attention-to-detail skills. Furthermore, my background includes working as a social worker and case manager, emphasizing inclusive communication, negotiation, and event coordination.
-        </p>
-
-
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className={`${skill.bgColor} p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105`}
+            >
+              <div className="flex justify-center mb-4">{skill.icon}</div>
+              <h3 className="text-2xl font-bold mb-2">{skill.title}</h3>
+              <p className="text-gray-100">{skill.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )
