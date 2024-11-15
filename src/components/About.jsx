@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { FaCode, FaUsers, FaLightbulb, FaBookOpen } from 'react-icons/fa';
 
 const About = () => {
   const skills = [
     {
       title: 'Technical Skills',
-      description:[
+      description: [
         'Proficiency: Currently working on web development projects for Northumbria University, collaborating with marketing teams to enhance user engagement, resulting in a 22% increase in traffic. Also led the management and enhancement of the CMS backend system.',
         'API Integration: Developed and deployed several full-stack web applications, gaining hands-on experience with projects like a money management website and a weather forecast app, showcasing strong skills in web development and RESTful API integration.',
-        'Database: Achieved excellent grades (85.5/100) for effectively managing academic staff data',
+        'Database: Achieved excellent grades (85.5/100) for effectively managing academic staff data.',
       ],
       bgColor: 'bg-blue-500',
       icon: <FaCode size={30} className="text-white" />,
@@ -23,9 +24,9 @@ const About = () => {
     },
     {
       title: 'Innovation',
-      description:[
-        'User Experience Community Associate: Improved user experience by analyzing feedback and implementing design enhancements across platforms, ensuring alignment with diverse community interests ',
-        'Computer Science University Ambassador, Campus Tour Guide, Student Guidance and Mentorship',
+      description: [
+        'User Experience Community Associate: Improved user experience by analyzing feedback and implementing design enhancements across platforms, ensuring alignment with diverse community interests.',
+        'Computer Science University Ambassador, Campus Tour Guide, Student Guidance and Mentorship.',
       ],
       bgColor: 'bg-yellow-500',
       icon: <FaLightbulb size={30} className="text-white" />,
@@ -40,11 +41,15 @@ const About = () => {
       icon: <FaBookOpen size={30} className="text-white" />,
     },
   ];
+
   return (
-    <div name="about" className='w-full justify-center h-screen bg-gradient-to-b from-gray-800 to-black text-white'>
-      <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
-        <div className='pb-8'>
-            <p className='text-4xl font-bold inline border-b-4 border-gray-500 font-signature'>About</p>
+    <div
+      name="about"
+      className="w-full justify-center h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+    >
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+        <div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500 font-signature">About</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {skills.map((skill, index) => (
@@ -54,13 +59,17 @@ const About = () => {
             >
               <div className="flex justify-center mb-4">{skill.icon}</div>
               <h3 className="text-2xl font-bold mb-2">{skill.title}</h3>
-              <p className="text-gray-100">{skill.description}</p>
+              <ul className="text-gray-100 text-left list-disc list-inside">
+                {skill.description.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;
