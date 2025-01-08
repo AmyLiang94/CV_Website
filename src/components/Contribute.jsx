@@ -7,7 +7,7 @@ import NSUSociety from "../assets/portfolio/NSUSociety.png"
 import IT from "../assets/portfolio/IT.jpg"
 
 
-const Portfolio = () => {
+const Contribute = () => {
 
     const portfolio = [
         {
