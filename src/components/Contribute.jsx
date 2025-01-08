@@ -13,35 +13,39 @@ const Contribute = () => {
         {
             id: 1,
             src: Habita,
-            href: 'https://mynsu.co.uk/habita'
+            href: 'https://mynsu.co.uk/habita',
+            description: 'Habita - bar & restaureant'
         },
         {
             id: 2,
             src: NS,
-            href: 'https://northernstage.co.uk/'
-            
+            href: 'https://northernstage.co.uk/',
+            description: 'Northern Stage'
+
         },
         {
             id: 3,
             src: NSU,
             href: 'https://mynsu.co.uk/home',
-            
+            description: 'Northumbria Students Union'
         },
         {
             id: 4,
             src: Freshers,
             href: 'https://mynsu.co.uk/Freshers2024',
-            
+            description: 'Northumbria Freshers Week 2024'
         },
         {
             id: 5,
             src: NSUSociety,
             href: 'https://mynsu.co.uk/societies',
+            description: 'Northumbria University Societies Dashboard'
         },
         {
             id: 6,
             src: IT,
             href: 'https://theitapprentice.com/andy-naisbitt/',
+            description: 'IT Apprentice Blog'
         },
     ]
 
@@ -57,7 +61,7 @@ const Contribute = () => {
         </div>
         <div  className='grid grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
         {
-            portfolio.map(({id, src, href}) => (
+            portfolio.map(({id, src, href, description}) => (
 
                 <div key={id} className='shadow-md shadow-gray-600 rounded-lg'>
                 <a href={href} target='_blank' rel='noopener noreferrer'>    
@@ -67,7 +71,7 @@ const Contribute = () => {
                       className='rounded-md duration-200 hover:scale-105'
                       />
                     <div className='flex items-center justify-center'>
-                        <button className='w-1/2 justify-center py-3 m-4 duration-200 hover:scale-105'>More</button>
+                        <button className='w-1/2 justify-center py-3 m-4 duration-200 hover:scale-105'>{description}</button>
                     </div>
                     </a>
                 </div>
