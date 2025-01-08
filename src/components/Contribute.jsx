@@ -4,7 +4,7 @@ import NS from "../assets/portfolio/NS.png"
 import NSU from "../assets/portfolio/NSU.jpeg"
 import Freshers from "../assets/portfolio/Freshers.png"
 import NSUSociety from "../assets/portfolio/NSUSociety.png"
-import IT from "../assets/portfolio/IT.png"
+import IT from "../assets/portfolio/IT.jpg"
 
 
 const Portfolio = () => {
