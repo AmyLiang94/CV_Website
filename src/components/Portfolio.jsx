@@ -2,7 +2,7 @@ import React from 'react';
 import MoneyManagement from "../assets/portfolio/MoneyManagement.png"
 import installNode from "../assets/portfolio/installNode.jpg"
 import TouristSite from "../assets/portfolio/TouristSite.png"
-import NewYearGame from "../assets/portfolio/NewYearGame.png"
+import NewYearGame from "../assets/portfolio/NewYearGame.jpg"
 import Quiz_application from "../assets/portfolio/Quiz_application.png"
 import reactWeather from "../assets/portfolio/reactWeather.jpg"
 
