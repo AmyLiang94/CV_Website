@@ -13,6 +13,7 @@ function App() {
       <Home/>
       <About/>
       <Experience/>
+      <Contribute/>
       <Portfolio/>
       <Contact/>
 

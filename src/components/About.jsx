@@ -51,7 +51,7 @@ const About = () => {
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500 font-signature">About</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {skills.map((skill, index) => (
             <div
               key={index}

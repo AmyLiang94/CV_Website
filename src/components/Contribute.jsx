@@ -1,11 +1,10 @@
 import React from 'react';
-import MoneyManagement from "../assets/portfolio/MoneyManagement.png"
-import installNode from "../assets/portfolio/installNode.jpg"
-import TouristSite from "../assets/portfolio/TouristSite.png"
-import NewYearGame from "../assets/portfolio/NewYearGame.png"
-import Quiz_application from "../assets/portfolio/Quiz_application.png"
-import reactWeather from "../assets/portfolio/reactWeather.jpg"
-
+import Habita from "../assets/portfolio/Habita.png"
+import NS from "../assets/portfolio/NS.png"
+import NSU from "../assets/portfolio/NSU.png"
+import Freshers from "../assets/portfolio/Freshers.png"
+import NSUSociety from "../assets/portfolio/NSUSociety.png"
+import IT from "../assets/portfolio/IT.png"
 
 
 const Portfolio = () => {
@@ -13,35 +12,36 @@ const Portfolio = () => {
     const portfolio = [
         {
             id: 1,
-            
-            src: Quiz_application,
-            href: 'https://github.com/AmyLiang94/Quiz-application'
+            src: Habita,
+            href: 'https://mynsu.co.uk/habita'
         },
         {
             id: 2,
-            src: TouristSite,
-            href: 'https://github.com/AmyLiang94/Newcastle-Travel-Web-App'
+            src: NS,
+            href: 'https://northernstage.co.uk/'
             
         },
         {
             id: 3,
-            src: NewYearGame,
-            href: 'https://github.com/AmyLiang94/Dragon-year-tic-tac-toe',
+            src: NSU,
+            href: 'https://mynsu.co.uk/home',
             
         },
         {
             id: 4,
-            src: MoneyManagement,
-            href: 'https://youtu.be/DyVhWUyiJUs',
+            src: Freshers,
+            href: 'https://mynsu.co.uk/Freshers2024',
             
         },
         {
             id: 5,
-            src: installNode
+            src: NSUSociety,
+            href: 'https://mynsu.co.uk/societies',
         },
         {
             id: 6,
-            src: reactWeather
+            src: IT,
+            href: 'https://theitapprentice.com/andy-naisbitt/',
         },
     ]
 
@@ -51,9 +51,9 @@ const Portfolio = () => {
     <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
             <p className='font-signature text-4xl font-bold inline border-b-4 border-gray-500'>
-                Portfolio
+            Open Source Group Project Contributions
             </p>
-            <p className='py-6'>Check out some of my work right here</p>
+            <p className='py-6'>Check out some of my contribute right here</p>
         </div>
         <div  className='grid grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
         {
@@ -80,4 +80,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default Contribute
