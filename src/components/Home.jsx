@@ -1,5 +1,5 @@
 import React from 'react';
-import WebsitePic from "../assets/WebsitePic.png";
+import WorkImageMar2025 from "../assets/WorkImageMar2025.png";
 import {MdOutlineKeyboardArrowRight} from 'react-icons/md';
 import { Link } from 'react-scroll';
 
