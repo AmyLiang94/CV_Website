@@ -17,7 +17,7 @@ const Home = () => {
         <div className='max-w-screen-lg mx-auto flex  items-center justify-center h-full px-4 flex-row'>
             <div className='flex flex-col justify-center h-full'>
                 <h2 className='text-4xl  sm:text-7xl font-bold text-white font-signature' >
-                    I'm a Software Developer
+                    Coding & Tech Enthusiast
                 </h2>
                 <p className='text-gray-500 py-4 max-w-md font-signature'>
                 For me, coding is more than just writing lines of code; it's about using our skills to create meaningful solutions and drive positive change in the world!
@@ -38,7 +38,7 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <img src={WebsitePic} alt="my profile" 
+                <img src={WorkImageMar2025} alt="my profile" 
                 className=" rounded-3xl mx-auto w-2/3 md:w-full"
 
                 />
