@@ -17,7 +17,7 @@ const SocialLinks = () => {
             style: 'rounded-tr-md'
         },
         {
-            id: 2,
+            id: 4,
             child:(
                 <>
                 GitHub<FaGithub size={30}/>
@@ -35,7 +35,7 @@ const SocialLinks = () => {
             href:'mailto:a2232025@gmail.com',
         },
         {
-            id: 4,
+            id: 2,
             child:(
                 <>
                 Resume <BsFillPersonLinesFill size={30}/>

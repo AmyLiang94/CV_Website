@@ -5,6 +5,7 @@ import NSU from "../assets/portfolio/NSU.jpeg"
 import Freshers from "../assets/portfolio/Freshers.png"
 import NSUSociety from "../assets/portfolio/NSUSociety.png"
 import IT from "../assets/portfolio/IT.jpg"
+import LeadNSU from "../assets/portfolio/LeadNSU.png"
 
 
 const Contribute = () => {
@@ -12,9 +13,9 @@ const Contribute = () => {
     const portfolio = [
         {
             id: 1,
-            src: Habita,
-            href: 'https://mynsu.co.uk/habita',
-            description: 'Habita - bar & restaureant'
+            src: LeadNSU,
+            href: 'https://mynsu.co.uk/leadnorthumbria/vote2025',
+            description: '2025 Northumbria University Elections'
         },
         {
             id: 2,
@@ -25,9 +26,9 @@ const Contribute = () => {
         },
         {
             id: 3,
-            src: NSU,
-            href: 'https://mynsu.co.uk/home',
-            description: 'Northumbria Students Union'
+            src: Habita,
+            href: 'https://mynsu.co.uk/habita',
+            description: 'Habita - bar & restaureant'
         },
         {
             id: 4,

@@ -27,7 +27,7 @@ const About = () => {
         'Led a project team to develop a tourist information site for Newcastle, managing tasks, deadlines, and smooth collaboration.',
         'Worked as a Community Associate at Northern Stage Newcastle, collaborating with UX and design teams to enhance user experience.',
         'Facilitated collaboration with clients, service providers, and team members to negotiate and maximize benefits as a Case Manager, managing over 160 cases annually.',
-        'Organized and coordinated activities during a fully funded overseas internship to foster teamwork in disability and nursing centers.',
+        
       ],
       bgColor: 'bg-green-500',
       icon: <FaUsers size={30} className="text-white" />,
