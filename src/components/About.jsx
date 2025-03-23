@@ -16,8 +16,12 @@ const About = () => {
     {
       title: 'Team Player',
       description: [
-        'Project Leadership: Led a team in developing a museum management system, earning a top grade of 96/100. Facilitated effective communication and collaboration, ensuring successful project completion and team productivity.',
-        'Efficiency & Team Collaboration: Managed 160+ cases annually, collaborating with diverse stakeholders to deliver results effectively within multidisciplinary teams.',
+        <span><strong>Collaborated cross-functionally</strong> with marketing, data managers to enhance website functionality and improve user engagement.</span>,
+        <span><strong>Managed and mentored team members</strong> during university events and tours as a Computer Science University Ambassador, providing guidance and maintaining a supportive, welcoming environment.</span>,
+        <span><strong>Led a project team</strong> to develop a tourist Newcastle information site, effectively coordinating tasks, managing deadlines, and ensuring smooth collaboration.</span>,
+        <span><strong>Worked as a Community Associate at Northern Stage Newcastle</strong>, collaborating with UX and design teams to enhance user experience through feedback-driven design improvements.</span>,
+        <span><strong>Facilitated collaboration</strong> with clients, service providers, and team members to negotiate and maximize benefits during your time as a Case Manager, managing over 160 cases annually.</span>,
+        <span><strong>Organized and coordinated activities</strong> as part of a fully-funded overseas internship, fostering teamwork to improve social engagement in disability and nursing centers.</span>
       ],
       bgColor: 'bg-green-500',
       icon: <FaUsers size={30} className="text-white" />,
