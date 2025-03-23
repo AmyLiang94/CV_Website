@@ -52,18 +52,23 @@ const About = () => {
               key={index}
               className={`${skill.bgColor} p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 cursor-pointer`}
               onClick={() => toggleDescription(index)}
-              style={{ minHeight: '150px' }} // 控制區塊高度
             >
-              <div className="flex flex-col items-center justify-center h-full">
+              <div className="flex flex-col items-center justify-center">
                 <div className="mb-4">{skill.icon}</div>
                 <h3 className="text-2xl font-bold mb-2">{skill.title}</h3>
-                {activeIndex === index && (
-                  <ul className="text-gray-100 text-left list-disc list-inside mt-4">
-                    {skill.description.map((item, i) => (
-                      <li key={i}>{item}</li>
-                    ))}
-                  </ul>
-                )}
+              </div>
+
+              {/* Smooth toggle effect: animate height + opacity */}
+              <div
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                  activeIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                }`}
+              >
+                <ul className="text-gray-100 text-left list-disc list-inside mt-4">
+                  {skill.description.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
