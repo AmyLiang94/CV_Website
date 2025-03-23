@@ -5,7 +5,7 @@ const About = () => {
   const [activeIndex, setActiveIndex] = useState(null); // Track which section is toggled
 
   const toggleDescription = (index) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? null : index)); // Toggle logic
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index)); // Toggle: close if clicked again, otherwise open
   };
 
   const skills = [
@@ -26,8 +26,6 @@ const About = () => {
         <span><strong>Managed and mentored team members</strong> during university events and tours as a Computer Science University Ambassador, providing guidance and maintaining a supportive, welcoming environment.</span>,
         <span><strong>Led a project team</strong> to develop a tourist Newcastle information site, effectively coordinating tasks, managing deadlines, and ensuring smooth collaboration.</span>,
         <span><strong>Worked as a Community Associate at Northern Stage Newcastle</strong>, collaborating with UX and design teams to enhance user experience through feedback-driven design improvements.</span>,
-        <span><strong>Facilitated collaboration</strong> with clients, service providers, and team members to negotiate and maximize benefits during your time as a Case Manager, managing over 160 cases annually.</span>,
-        <span><strong>Organized and coordinated activities</strong> as part of a fully-funded overseas internship, fostering teamwork to improve social engagement in disability and nursing centers.</span>,
       ],
       bgColor: 'bg-green-500',
       icon: <FaUsers size={30} className="text-white" />,
@@ -36,7 +34,6 @@ const About = () => {
       title: 'Innovation',
       description: [
         'User Experience Community Associate: Improved user experience by analyzing feedback and implementing design enhancements across platforms, ensuring alignment with diverse community interests.',
-        'Computer Science University Ambassador, Campus Tour Guide, Student Guidance and Mentorship.',
       ],
       bgColor: 'bg-yellow-500',
       icon: <FaLightbulb size={30} className="text-white" />,
@@ -49,7 +46,6 @@ const About = () => {
       bgColor: 'bg-purple-500',
       icon: <FaBookOpen size={30} className="text-white" />,
     },
-
   ];
 
   return (
@@ -60,15 +56,16 @@ const About = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
           {skills.map((skill, index) => (
-            <div key={index} className={`${skill.bgColor} p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105`}>
+            <div
+              key={index}
+              className={`${skill.bgColor} p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105`}
+              onClick={() => toggleDescription(index)} // Trigger toggle on entire section click
+            >
               <div className="flex justify-center mb-4">{skill.icon}</div>
-              <h3
-                className="text-2xl font-bold mb-2 cursor-pointer"
-                onClick={() => toggleDescription(index)}
-              >
+              <h3 className="text-2xl font-bold mb-2 cursor-pointer">
                 {skill.title}
               </h3>
-              {activeIndex === index && (
+              {activeIndex === index && ( // Conditionally render description if this section is active
                 <ul className="text-gray-100 text-left list-disc list-inside">
                   {skill.description.map((item, i) => (
                     <li key={i}>{item}</li>
