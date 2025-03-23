@@ -6,9 +6,9 @@ const About = () => {
     {
       title: 'Technical Skills',
       description: [
-        'Proficiency: Currently working on web development projects for Northumbria University, collaborating with marketing teams to enhance user engagement, resulting in a 22% increase in traffic. Also led the management and enhancement of the CMS backend system.',
+        'Proficiency: Currently working on web development projects for Northumbria University, collaborating with marketing teams to enhance user engagement. Also led the management and enhancement of the CMS backend system.',
         'API Integration: Developed and deployed several full-stack web applications, gaining hands-on experience with projects like a money management website and a weather forecast app, showcasing strong skills in web development and RESTful API integration.',
-        'Database: Achieved excellent grades (85.5/100) for effectively managing academic staff data.',
+        'Database: Demonstrated strong database management skills through academic projects, including an Academic Staff Management System (Java, JUnit) that earned a grade of 85.5/100. Designed, implemented, and unit-tested a system for efficiently managing university staff data, showcasing practical knowledge of relational databases and SQL concepts.',
       ],
       bgColor: 'bg-blue-500',
       icon: <FaCode size={30} className="text-white" />,
