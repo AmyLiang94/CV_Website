@@ -73,7 +73,7 @@ const About = () => {
               </div>
 
               <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                className={` transition-all duration-500 ease-in-out ${
                   activeIndex === index ? 'max-h-96 opacity-100 py-4' : 'max-h-0 opacity-0'
                 }`}
               >
